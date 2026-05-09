@@ -18,11 +18,9 @@ jobs:
           node-version: "25"
 
       - name: Install Dependencies
-        working-directory: practice_ci
         run: npm ci
 
       - name: Run tests (If any)
-        working-directory: practice_ci
         run: npm test --if-present
 
   docker-publish:
