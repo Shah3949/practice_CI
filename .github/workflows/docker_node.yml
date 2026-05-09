@@ -40,5 +40,6 @@ jobs:
       - name: Build and Push image
         uses: docker/build-push-action@v7
         with:
+          context: .
           push: true
           tags: user/app:latest
